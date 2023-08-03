@@ -7,7 +7,7 @@ Lucid is a note taking app made for samsung devices with S pen support(Both blue
 Current version Vx42. Available at (need to place link to release.)
 
 How to use guide form Vx38: 
-UI of current version may differ.
+(UI and features of current version may differ.)
 
 ![ScreenShot_20220516093800294_2080_1247_1](https://github.com/SaiKamalP/lucid/assets/104264136/75e3a276-beea-4d04-bc7c-473460682bda)
 ![ScreenShot_20220516093800294_2080_1247_2](https://github.com/SaiKamalP/lucid/assets/104264136/1336285c-9853-40d5-b580-13ccc567e7e1)
