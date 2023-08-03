@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lucid</string>
+    <string name="btn" />
+    <string name="redo">R</string>
+    <string name="kkkkkkkkkk">|</string>
+    <string name="background">Background</string>
+    <string name="export">Export</string>
+    <string name="text123">☰</string>
+    <string name="text2">&gt;</string>
+    <string name="undo">U</string>
+    <string name="text1" >&lt;</string>
+    <string name="button1" />
+    <string name="button2" />
+    <string name="button3" />
+</resources>

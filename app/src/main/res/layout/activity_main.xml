@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/datagrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:columnWidth="250dp"
+            android:foregroundGravity="bottom"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationD" />
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ffffff"
+            android:contentDescription="@android:string/untitled"
+            android:onClick="plusbutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@mipmap/addicon" />
+
+        <Button
+            android:id="@+id/newfolderbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:onClick="clickednewfolder"
+            android:text="New Folder"
+            android:textColor="#000000"
+            android:backgroundTint="#E8E8E8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ImportNotetbtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/ImportNotetbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:onClick="importnoteNow"
+            android:text="Import Note"
+            android:textColor="#000000"
+            android:backgroundTint="#E8E8E8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/importPdfbtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/importPdfbtn"
+            android:layout_width="141dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="importpdfNow"
+            android:text="IMPORT PDF"
+            android:textColor="#000000"
+            android:backgroundTint="#E8E8E8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/newnotebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"
+            android:backgroundTint="#E8E8E8"
+            android:onClick="newNote"
+            android:text="New Note"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/newfolderbtn"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/locationD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

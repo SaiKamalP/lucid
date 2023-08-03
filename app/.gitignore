@@ -1,13 +1,13 @@
 # Gradle files
 .gradle/
 build/
-libs/
 release/
-proguard-rules.pro
-gradle/
+
 gradle.properties
+
 gradlew
 gradlew.bat
+
 # Local configuration file (sdk path, etc)
 local.properties
 
