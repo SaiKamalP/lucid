@@ -20,6 +20,11 @@ public class PathswithC implements Cloneable {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // java.lang.Object
     public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        PathswithC clonedPathWithC=new PathswithC(new Path(this.P),this.c[0],this.c[1],this.c[2],this.sw);
+        clonedPathWithC.IsVissable=IsVissable;
+        clonedPathWithC.pathXShift=pathXShift;
+        clonedPathWithC.pathYShift=pathYShift;
+        return clonedPathWithC;
     }
+
 }

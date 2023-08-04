@@ -400,6 +400,7 @@ public class Mycanvas1 extends View {
                             if (this.CurrentNotes.pages.get(this.CPgNumber).pathslist.get(i4).IsVissable == 0) {
                                 this.CurrentNotes.pages.get(this.CPgNumber).pathslist.remove(i4);
                                 this.CurrentNotes.pages.get(this.CPgNumber).pathsCstrokes.remove(i4);
+                                i4--;
                             }
                         }
                         if (this.CurrentNotes.pages.get(this.CPgNumber).UndoNumber > 0) {
@@ -416,7 +417,7 @@ public class Mycanvas1 extends View {
                                 if ((Math.abs((x - next.x) - this.CurrentNotes.pages.get(this.CPgNumber).pathslist.get(i6).pathXShift) + Math.abs((y - next.y) - this.CurrentNotes.pages.get(this.CPgNumber).pathslist.get(i6).pathYShift)) * this.Z_zoomfactor < this.pen1.EraserSize) {
                                     this.CurrentNotes.pages.get(this.CPgNumber).pathslist.remove(i6);
                                     this.CurrentNotes.pages.get(this.CPgNumber).pathsCstrokes.remove(i6);
-
+                                    i6--;
                                     break;
                                 }
 
